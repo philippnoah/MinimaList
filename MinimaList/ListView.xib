@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListView" customModule="MinimaList" customModuleProvider="target">
+            <connections>
+                <outlet property="newItemButton" destination="nb6-YB-sSP" id="0ln-mx-oWA"/>
+                <outlet property="tableView" destination="sIR-Uq-vxF" id="yeW-DO-ihe"/>
+                <outlet property="titleTextField" destination="Srh-7Q-RcU" id="626-Z0-jrG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Gf0-Z2-uFB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="671"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srh-7Q-RcU">
+                    <rect key="frame" x="35" y="0.0" width="315" height="66"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="315" id="h1O-aY-hAB"/>
+                        <constraint firstAttribute="height" constant="66" id="yiq-Aj-xtv"/>
+                    </constraints>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sIR-Uq-vxF">
+                    <rect key="frame" x="20" y="68" width="410" height="603"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.0" green="0.35118575507614214" blue="0.19130488155085537" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="EDV-ry-eA3"/>
+                        <outlet property="delegate" destination="-1" id="giu-rk-LFN"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb6-YB-sSP">
+                    <rect key="frame" x="325" y="566" width="75" height="75"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="1aH-M8-axQ"/>
+                        <constraint firstAttribute="height" constant="75" id="9q7-jN-zhM"/>
+                    </constraints>
+                    <state key="normal" title="Add" image="addButton">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewItem:" destination="-1" eventType="touchUpInside" id="UZR-Nl-UFh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nb6-YB-sSP" secondAttribute="bottom" constant="30" id="5Na-FE-zJV"/>
+                <constraint firstAttribute="trailing" secondItem="nb6-YB-sSP" secondAttribute="trailing" constant="50" id="HBp-re-U0p"/>
+                <constraint firstAttribute="bottom" secondItem="sIR-Uq-vxF" secondAttribute="bottom" id="KJX-Ft-Kff"/>
+                <constraint firstItem="Srh-7Q-RcU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="35" id="Kvk-4A-FQI"/>
+                <constraint firstItem="sIR-Uq-vxF" firstAttribute="top" secondItem="Srh-7Q-RcU" secondAttribute="bottom" constant="2" id="MKw-HR-Nbx"/>
+                <constraint firstItem="sIR-Uq-vxF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="blu-hs-yyL"/>
+                <constraint firstItem="sIR-Uq-vxF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cp5-qo-Q3t"/>
+                <constraint firstItem="Srh-7Q-RcU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pgR-Yc-Zyz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="70" y="108.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addButton" width="180" height="180"/>
+    </resources>
+</document>
