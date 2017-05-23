@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Task {
+    dynamic var title: String
+    dynamic var isDone: Bool
+    
+    init(title: String) {
+        self.title = title
+        self.isDone = false
+    }
+}

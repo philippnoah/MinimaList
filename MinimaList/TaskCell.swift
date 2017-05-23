@@ -10,6 +10,7 @@ import UIKit
 
 class TaskCell: UITableViewCell {
     
+    var isDone: Bool?
     
     override func awakeFromNib() {
         super.awakeFromNib()

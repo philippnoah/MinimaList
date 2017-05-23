@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListView" customModule="MinimaList" customModuleProvider="target">
             <connections>
@@ -26,15 +31,15 @@
                     <rect key="frame" x="35" y="0.0" width="315" height="66"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="315" id="h1O-aY-hAB"/>
-                        <constraint firstAttribute="height" constant="66" id="yiq-Aj-xtv"/>
+                        <constraint firstAttribute="width" constant="315" id="jAh-ya-zIH"/>
+                        <constraint firstAttribute="height" constant="66" id="oWX-ta-EyL"/>
                     </constraints>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="24"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sIR-Uq-vxF">
-                    <rect key="frame" x="20" y="68" width="410" height="603"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sIR-Uq-vxF">
+                    <rect key="frame" x="20" y="20" width="410" height="651"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -49,32 +54,42 @@
                     <rect key="frame" x="325" y="566" width="75" height="75"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="75" id="1aH-M8-axQ"/>
-                        <constraint firstAttribute="height" constant="75" id="9q7-jN-zhM"/>
+                        <constraint firstAttribute="height" constant="75" id="bgU-Eg-lqg"/>
+                        <constraint firstAttribute="width" constant="75" id="gp6-RC-KKS"/>
                     </constraints>
                     <state key="normal" title="Add" image="addButton">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
-                        <action selector="addNewItem:" destination="-1" eventType="touchUpInside" id="UZR-Nl-UFh"/>
+                        <action selector="addNewItem:" destination="-1" eventType="touchUpInside" id="e7X-mz-xqO"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="nb6-YB-sSP" secondAttribute="bottom" constant="30" id="5Na-FE-zJV"/>
-                <constraint firstAttribute="trailing" secondItem="nb6-YB-sSP" secondAttribute="trailing" constant="50" id="HBp-re-U0p"/>
-                <constraint firstAttribute="bottom" secondItem="sIR-Uq-vxF" secondAttribute="bottom" id="KJX-Ft-Kff"/>
-                <constraint firstItem="Srh-7Q-RcU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="35" id="Kvk-4A-FQI"/>
-                <constraint firstItem="sIR-Uq-vxF" firstAttribute="top" secondItem="Srh-7Q-RcU" secondAttribute="bottom" constant="2" id="MKw-HR-Nbx"/>
-                <constraint firstItem="sIR-Uq-vxF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="blu-hs-yyL"/>
-                <constraint firstItem="sIR-Uq-vxF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cp5-qo-Q3t"/>
-                <constraint firstItem="Srh-7Q-RcU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pgR-Yc-Zyz"/>
+                <constraint firstAttribute="trailing" secondItem="nb6-YB-sSP" secondAttribute="trailing" constant="50" id="7fe-zs-QfY"/>
+                <constraint firstItem="sIR-Uq-vxF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="9dv-4J-Xu4"/>
+                <constraint firstItem="Srh-7Q-RcU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jek-QR-emk"/>
+                <constraint firstItem="sIR-Uq-vxF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="K8V-dl-zSH"/>
+                <constraint firstAttribute="bottom" secondItem="sIR-Uq-vxF" secondAttribute="bottom" id="KyH-qG-ZU0"/>
+                <constraint firstItem="Srh-7Q-RcU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="35" id="LlQ-s9-cf2"/>
+                <constraint firstItem="sIR-Uq-vxF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gX1-he-hA5"/>
+                <constraint firstAttribute="bottom" secondItem="nb6-YB-sSP" secondAttribute="bottom" constant="30" id="xzh-1U-aar"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="UtF-7U-mCu" appends="YES" id="yJ6-7R-D8F"/>
+            </connections>
             <point key="canvasLocation" x="70" y="108.5"/>
         </view>
+        <tapGestureRecognizer id="UtF-7U-mCu">
+            <connections>
+                <action selector="tapped:" destination="-1" id="ppI-91-VlA"/>
+                <outlet property="delegate" destination="-1" id="k09-Fv-ruc"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="addButton" width="180" height="180"/>

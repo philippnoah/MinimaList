@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         scrollView.contentSize = CGSize(width: scrollView.frame.width, height: scrollView.frame.height)
-        scrollView.isPagingEnabled = true
         addNewListView()
     }
 
