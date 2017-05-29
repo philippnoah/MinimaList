@@ -13,6 +13,10 @@
 		3351E1231ED4A917005BC244 /* Minima_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3351E1211ED4A917005BC244 /* Minima_List.xcdatamodeld */; };
 		3351E1251ED4A917005BC244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3351E1241ED4A917005BC244 /* Assets.xcassets */; };
 		3351E1281ED4A917005BC244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3351E1261ED4A917005BC244 /* LaunchScreen.storyboard */; };
+		3351E1351ED4D418005BC244 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3351E1311ED4D418005BC244 /* Quicksand-Bold.ttf */; };
+		3351E1361ED4D418005BC244 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3351E1321ED4D418005BC244 /* Quicksand-Light.ttf */; };
+		3351E1371ED4D418005BC244 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3351E1331ED4D418005BC244 /* Quicksand-Medium.ttf */; };
+		3351E1381ED4D418005BC244 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3351E1341ED4D418005BC244 /* Quicksand-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3351E1241ED4A917005BC244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3351E1271ED4A917005BC244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3351E1291ED4A917005BC244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3351E1311ED4D418005BC244 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Bold.ttf"; path = "../../../../Quicksand/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		3351E1321ED4D418005BC244 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Light.ttf"; path = "../../../../Quicksand/Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		3351E1331ED4D418005BC244 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Medium.ttf"; path = "../../../../Quicksand/Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		3351E1341ED4D418005BC244 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Regular.ttf"; path = "../../../../Quicksand/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +71,28 @@
 				3351E1261ED4A917005BC244 /* LaunchScreen.storyboard */,
 				3351E1291ED4A917005BC244 /* Info.plist */,
 				3351E1211ED4A917005BC244 /* Minima_List.xcdatamodeld */,
+				3351E12F1ED4D3E8005BC244 /* Fonts */,
 			);
 			path = "Minima List";
+			sourceTree = "<group>";
+		};
+		3351E12F1ED4D3E8005BC244 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3351E1301ED4D3F3005BC244 /* Quicksand */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		3351E1301ED4D3F3005BC244 /* Quicksand */ = {
+			isa = PBXGroup;
+			children = (
+				3351E1311ED4D418005BC244 /* Quicksand-Bold.ttf */,
+				3351E1321ED4D418005BC244 /* Quicksand-Light.ttf */,
+				3351E1331ED4D418005BC244 /* Quicksand-Medium.ttf */,
+				3351E1341ED4D418005BC244 /* Quicksand-Regular.ttf */,
+			);
+			name = Quicksand;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +157,11 @@
 			files = (
 				3351E1281ED4A917005BC244 /* LaunchScreen.storyboard in Resources */,
 				3351E1251ED4A917005BC244 /* Assets.xcassets in Resources */,
+				3351E1381ED4D418005BC244 /* Quicksand-Regular.ttf in Resources */,
 				3351E1201ED4A917005BC244 /* Main.storyboard in Resources */,
+				3351E1351ED4D418005BC244 /* Quicksand-Bold.ttf in Resources */,
+				3351E1361ED4D418005BC244 /* Quicksand-Light.ttf in Resources */,
+				3351E1371ED4D418005BC244 /* Quicksand-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LM2ZWJRF67;
 				INFOPLIST_FILE = "Minima List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.philippeibl.Minima-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,6 +315,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LM2ZWJRF67;
 				INFOPLIST_FILE = "Minima List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.philippeibl.Minima-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,6 +342,7 @@
 				3351E12E1ED4A917005BC244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
